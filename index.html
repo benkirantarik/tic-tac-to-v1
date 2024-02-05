@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toc</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="app" game-stat="off">
+        <div class="card active">
+            <h1>Tic Tac To</h1>
+            <button id="start-btn">start</button>
+        </div>
+        <div class="card">
+            <h2>Players</h2>
+            <span class="player-span" p-type="pp">Player Vs Player</span>
+            <span class="player-span" p-type="pc">Player Vs Computer</span>
+            <span class="player-span" p-type="cc">Computer Vs Computer</span>
+            <button id="prev-btn" class="arrow prev-arrow"><</button>
+            <button id="next-btn" class="arrow next-arrow">></button>
+        </div>
+        <div class="card">
+            <h2>Options</h2>
+            <div class="player-option">
+                <h3 id="p1-h3" >Player 1</h3>
+                <div class="line"><i>sing</i><input type="text"        id="p1-sing-input"     value="X"></div>
+                <div class="line"><i>color</i><input type="color"      id="p1-color-input"    value="#ff0000"></div>
+                <div class="line"><i>background</i><input type="color" id="p1-bg-color-input" value="#ffffff"></div>
+                <button id="pl-prev-btn" class="arrow prev-arrow"><</button>
+                <button id="pl-next-btn" class="arrow next-arrow">></button>
+                <button id="start-the-game-btn">Start The Game</button>
+            </div>
+            <div class="player-option">
+                <h3 id="p2-h3" >Player 2</h3>
+                <div class="line"><i>sing</i><input type="text"        id="p2-sing-input"      value="O"></div>
+                <div class="line"><i>color</i><input type="color"      id="p2-color-input"     value="#008000"></div>
+                <div class="line"><i>background</i><input type="color" id="p2-bg-color-input"  value="#ffffff"></div>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Game</h2>
+            <div id="game-layer" class="layer">
+                <h3 id="winner-h3">Player 1 WIN</h3>
+                <button id="replay-btn">Replay</button>
+                <button id="options-btn">Options</button>
+            </div>
+            <div class="boxs">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="code.js"></script>
+</body>
+</html>
